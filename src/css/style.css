@@ -1,0 +1,64 @@
+:root {
+  --bg-color: #0d0d0d;
+  --bg-overlay: #f9f6f6b5;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #f9f6f6 !important;
+  overflow: hidden;
+}
+
+i,
+ul li {
+  cursor: pointer;
+}
+
+.inner-loading-screen {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background-color: var(--bg-color);
+  display: flex;
+}
+
+.loading-screen {
+  z-index: 999999999;
+  display: flex;
+}
+
+.nav-tab {
+  background-color: var(--bg-color);
+}
+
+.logo-img {
+  width: 50px;
+}
+
+.meal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-overlay);
+  top: 100%;
+  transition: 0.5s;
+}
+
+.meal:hover .meal-overlay {
+  top: 0;
+}
+
+.side-nav-menu {
+  z-index: 10;
+}
+
+.bg-ingredient {
+  background-color: #cff4fc;
+}
+
+.bg-tag {
+  background-color: #f8d7da;
+}
+
+.alert {
+  width: fit-content;
+}
